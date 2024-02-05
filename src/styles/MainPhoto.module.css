@@ -1,0 +1,216 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  background-color: #E1F2F9;
+  width: 100%;
+}
+
+.container_mobile {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+.welcome_text {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 1rem;
+}
+
+.txt {
+  font-size: 1.6rem;
+  color: #002E5A;
+  font-weight: 600;
+  margin-top: 1rem;
+}
+
+.top_frame {
+  position: absolute;
+  height: 8rem;
+  width: 150%;
+  top: 4rem;
+  z-index: 1;
+}
+
+.img_container {
+  position: relative;
+}
+
+.main_picture {
+  width: 100%;
+  height: max-content;
+  z-index: 0;
+}
+
+.button_frame {
+  position: absolute;
+  height: 11rem;
+  width: 150%;
+  top: -11rem;
+  left: -2.5rem;
+  z-index: 1;
+}
+
+.central_flowers {
+  position: absolute;
+  height: 8rem;
+  width: 60%;
+  top: -6rem;
+  left: 4.5rem;
+  z-index: 1;
+}
+
+.img_container_desktop {
+  display: none;
+}
+
+.info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 2rem;
+}
+
+.date {
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
+  border: #AEDCEB solid 0.1rem;
+  color: #002E5A;
+  padding: 0.3rem;
+}
+
+.names {
+  font-size: 2.5rem;
+  color: #002E5A;
+  font-weight: 900;
+}
+
+.span {
+  background-color: #AEDCEB;
+  position: relative;
+  display: inline-block;
+  border-radius: 50%;
+  width: 3rem;
+  height: 3rem;
+  font-size: 2rem;
+  color: #fff;
+  padding-left: 0.8rem;
+}
+
+.span::before {
+  left: 4rem;
+  background: #AEDCEB;
+  content: '';
+  display: inline-block;
+  position: absolute;
+  top: 1.8rem;
+  width: 5rem;
+  height: 0.06rem;
+}
+
+.span::after {
+  right: 3.8rem;
+  background: #AEDCEB;
+  content: '';
+  display: inline-block;
+  position: absolute;
+  top: 1.8rem;
+  width: 5rem;
+  height: 0.06rem;
+}
+
+.quotes_container {
+  margin: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.quotes {
+  color: #AEDCEB;
+  font-size: 2rem;
+}
+
+.central_flowers_desktop {
+  display: none;
+}
+
+@media only screen and (min-width: 768px) {
+  .central_flowers {
+    height: 14rem;
+    top: -11rem;
+    left: -10.5rem
+  }
+
+  .welcome_text {
+    margin-bottom: 1rem;
+  }
+  .txt {
+    font-size: 1.9rem;
+  }
+
+  .names{
+    font-size: 3rem;
+  }
+
+}
+
+@media only screen and (min-width: 1000px) {
+  .container {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .container_mobile {
+    display: none;
+  }
+
+  .img_container_desktop {
+    display: block;
+  }
+
+  .illustration_desktop {
+    flex: 6;
+    height: max-content;
+    width: 41rem;
+  }
+
+  .names{
+    font-size: 3.2rem;
+  }
+
+  .lateral_frame {
+    position: absolute;
+    left: 33rem;
+    height: 99%;
+    width: 11rem;
+  }
+
+  .central_flowers_desktop {
+    display: block;
+    height: 14rem;
+    position: absolute;
+    width: 30.9rem;
+    top: -5.2rem;
+  }
+
+  .info {
+    display: flex;
+    flex: 1;
+    padding-top: 2rem;
+  }
+
+}
+
+
+
+/* 
+#002E5A;
+ #AEDCEB;
+#E1F2F9;
+ #818B94;
+ #E3E6E5; */
