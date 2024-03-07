@@ -1,8 +1,7 @@
 import styles from "../styles/components/Footer.module.css";
 import Image from "next/image";
-import { Great_Vibes, Tangerine } from 'next/font/google';
+import { Great_Vibes} from 'next/font/google';
 
-type Tangerine = any
 type Great_Vibes = any
 
 const myGreatVibesFont: Great_Vibes = Great_Vibes({
@@ -11,11 +10,6 @@ const myGreatVibesFont: Great_Vibes = Great_Vibes({
   subsets: ['latin'],
 });
 
-const myTangerineFonts: Tangerine = Tangerine({
-  weight: '400',
-  style: 'normal',
-  subsets: ['latin'],
-});
 
 export default function Footer() {
   return (

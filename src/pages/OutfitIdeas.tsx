@@ -3,16 +3,15 @@ import men1 from '../../public/assets/img/m1.png'
 import men2 from '../../public/assets/img/m2.png'
 import women1 from '../../public/assets/img/w1.png'
 import women2 from '../../public/assets/img/w2.png'
-import flowers2 from '../../public/assets/img/flowers3.png'
 
 import Image from 'next/image'
+import { Great_Vibes } from 'next/font/google'
+import Footer from "@/components/Footer"
+import { IoArrowBackCircleSharp } from "react-icons/io5"
+import Link from 'next/link'
 
 import "../styles/global.css"
 import styles from "@/styles/components/OutfitIdeas.module.css"
-import { Great_Vibes } from 'next/font/google';
-import Footer from "@/components/Footer";
-import { IoArrowBackCircleSharp } from "react-icons/io5";
-import Link from 'next/link'
 
 
 type Great_Vibes = any

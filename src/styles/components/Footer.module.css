@@ -17,6 +17,8 @@
   top: -4rem;
   left: 7rem;
   margin-bottom: 2rem;
+  width: fit-content;
+  background-color: #002E5A;
 }
 
 
@@ -41,15 +43,18 @@
   position: relative;
   left: 1rem;
   top: -6rem;
+
 }
 
 .info {
   display: flex;
   flex-direction: column;
+  background-color: #002E5A;
 }
 
 .questions {
   color: #AEDCEB;
+  background-color: #002E5A;
 }
 
 @media only screen and (min-width: 1000px) {

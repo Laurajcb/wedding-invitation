@@ -5,6 +5,8 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  width: 100%;
+  margin-left: 0rem;
 }
 
 .arrow{
@@ -24,9 +26,8 @@
 .main_img {
   width: 20rem;
   height: 33rem;
-  margin-top: 1rem;
+  margin: 1rem 2rem;
   object-fit: cover;
-  margin-bottom: 1rem;
 }
 
 .ideas_container {
