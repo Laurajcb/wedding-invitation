@@ -1,0 +1,161 @@
+.container {
+  background-color: #e1f2f9;
+  padding-top: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.arrow{
+  display: flex;
+  align-self: flex-start;
+  font-size: 3rem;
+  margin-left: 2rem;
+  color: #002E5A;
+}
+
+.main_title {
+  color: #002E5A;
+  font-size: 2rem;
+}
+
+.img,
+.main_img {
+  width: 20rem;
+  height: 33rem;
+  margin-top: 1rem;
+  object-fit: cover;
+  margin-bottom: 1rem;
+}
+
+.ideas_container {
+  display: flex;
+  flex-direction: row;
+  gap: 5rem;
+  margin: 1rem;
+  position: relative;
+  margin-bottom: 6rem;
+}
+
+
+.flowers {
+  height: 9rem;
+  width: 9rem;
+  position: absolute;
+  left: -4rem;
+  top: 14rem;
+}
+
+.ideas_w,
+.ideas_m {
+  color: #002E5A;
+  font-size: 1.6rem;
+  margin: 1.5rem;
+}
+
+.list_container {
+  list-style: circle;
+  color: #002E5A;
+}
+
+.img {
+  width: 20rem;
+  height: 33rem;
+  margin-top: 1rem;
+  object-fit: cover;
+  margin-bottom: 5rem;
+  border-radius: 2rem;
+}
+
+.p {
+  color: #002E5A;
+  font-weight: 300;
+  margin: 1rem 0;
+  font-size: 2rem;
+}
+
+.imgs_ei {
+  display: flex;
+  flex-direction: column;
+}
+
+.flowers2 {
+  height: 6rem;
+  width: 6rem;
+  position: absolute;
+  left: 20rem;
+  bottom: -148rem;
+}
+
+
+
+@media only screen and (min-width: 1000px) {
+  .main_title {
+    margin: 4rem;
+    font-weight: 400;
+    font-size: 5rem;
+  }
+
+  .img_dtop {
+    display: flex;
+    flex-direction: row;
+    gap: 8rem;
+    width: 100%;
+    justify-content: center;
+    margin-bottom: 8rem;
+  }
+
+  .main_img {
+    width: 25rem;
+    height: 40rem;
+  }
+
+  .ideas_container {
+    flex-direction: column;
+  }
+
+  .flowers {
+    height: 14rem;
+    width: 16rem;
+    position: absolute;
+    left: 23rem;
+    top: -25rem;
+  }
+
+  .ideas_w,
+  .ideas_m {
+    font-size: 2rem;
+    margin-left: -1rem;
+  }
+
+  .list_container li {
+    font-size: 1.4rem;
+  }
+
+  .img {
+    width: 25rem;
+    height: 43rem;
+  }
+
+  .imgs_ei {
+    gap: 11rem;
+    flex-direction: row;
+  }
+
+  .p{
+    font-size: 2.9rem;
+    margin: 3rem;
+  }
+
+  .margin{
+    margin-bottom: 6rem;
+  }
+
+  .flowers2{
+    height: 9rem;
+    width: 9rem;
+    left: 76rem;
+    bottom: -129rem;
+  }
+}

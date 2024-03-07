@@ -1,0 +1,95 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 8rem;
+}
+
+.card_container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 23rem;
+  width: 20rem;
+  background-color: white;
+  padding: 0.5rem;
+  position: relative;
+  margin-bottom: 5rem;
+  border-radius: 2rem;
+  box-shadow: 0px 0px 15px 0px #AEDCEB;
+  justify-content: space-around;
+}
+
+.icon {
+  font-size: 5rem;
+  color: #002E5A;
+}
+
+.title {
+  font-size: 1.8rem;
+  color: #002E5A;
+  margin-bottom: 1rem;
+  margin-bottom: 1.8rem;
+}
+
+.txt {
+  color: #b8bbba;
+  margin: 0.8rem;
+  text-align: left;
+  font-size: 1rem;
+  text-align: center;
+}
+
+.btns_container {
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+.btn_dress {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 2rem;
+  padding: 0.5rem;
+  color: #002E5A;
+  border: solid #aedceba0 0.05rem;
+  background-color: #aedceba0;
+  font-size: 0.9rem;
+  width: 8rem;
+  text-decoration: none;
+}
+
+.span_dress_code {
+  display: flex;
+  flex-direction: column;
+}
+
+.drop_color {
+  font-size: 2.2rem;
+  color: #002E5A;
+  margin-bottom: 1rem;
+}
+
+.bold {
+  font-weight: bold;
+  color: #002E5A;
+}
+
+.underLine {
+  text-decoration: underline;
+}
+
+
+@media only screen and (min-width: 1000px) {
+  .container {
+    flex-direction: row;
+    gap: 2rem;
+  }
+
+  .card_container {
+    margin-right: 1.5rem;
+  }
+}

@@ -1,16 +1,14 @@
 "use client"
-import React, { useState } from 'react';
+import React from 'react';
 
 import Image from "next/image";
-import styles from "@/styles/Information.module.css"
+import styles from "@/styles/components/Information.module.css"
 import MySVGIcon from "../../public/assets/svg/img_lineas01.svg";
 
 import { Great_Vibes } from 'next/font/google';
 import { PiChurchThin } from "react-icons/pi";
 import { ImLocation } from "react-icons/im";
 import { GiPartyPopper } from "react-icons/gi";
-import { IoCloseSharp } from "react-icons/io5";
-import { BsBusFront } from "react-icons/bs";
 
 type Great_Vibes = any
 
@@ -22,11 +20,6 @@ const myGreatVibesFont: Great_Vibes = Great_Vibes({
 
 
 export default function Information() {
-  const [isOpen, setIsOpen] = useState(false)
-
-  const handleClick: React.MouseEventHandler<HTMLButtonElement> = (event) => {
-    setIsOpen(!isOpen)
-  };
 
   return (
     <section className={styles.container}>
@@ -40,63 +33,54 @@ export default function Information() {
       <div className={styles.card}>
         <div className={styles.card_content}>
           <PiChurchThin className={styles.church} />
-          <h2 className={`${styles.title} ${myGreatVibesFont.className}`}>Ceremonia</h2>
+          <h3 className={`${styles.title} ${myGreatVibesFont.className}`}>
+            Ceremonia
+          </h3>
 
           <p className={styles.day_title}>Día</p>
           <span className={styles.span}>
-            01 Junio 2024
+            15 Junio 2024
+          </span>
+
+          <p className={styles.day_title}>Hora</p>
+          <span className={styles.span}>
+            4:30pm
           </span>
 
           <button className={styles.place_btn}>Lugar</button>
           <span className={styles.span}>
-            <a className={styles.location_btn} href="https://www.google.com/maps/place/Casa/@4.604035,-74.1508868,16.08z/data=!4m6!3m5!1s0x8e3f9f00563dded3:0x48feb1f21559727b!8m2!3d4.6062812!4d-74.1530376!16s%2Fg%2F11vq09tbwv?entry=ttu">
+            <a className={styles.location_btn} href="https://www.google.com/maps/place/Parroquia+Santa+%C3%81gueda/@4.6058572,-74.1144839,17z/data=!3m1!4b1!4m6!3m5!1s0x8e3f99464be90113:0xe03d083ffd273de3!8m2!3d4.6058572!4d-74.111909!16s%2Fg%2F1hf3bg6d8?entry=ttu">
               <ImLocation className={styles.btn} />
-              Norte muy norte 200
+              Parroquia Santa Águeda
             </a>
           </span>
 
-          <button onClick={handleClick}
-            className={styles.map}
-          >
-            Cómo llegar ?
-          </button>
         </div>
-        {
-          isOpen &&
-          <article className={styles.modalOverlay}>
-            <section className={styles.modal_container}>
-              <button className={styles.closeBtn_container} onClick={handleClick}>
-                <IoCloseSharp />
-              </button>
-              <div className={styles.icon_container}>
-                <BsBusFront className={styles.bus} />
-              </div>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio sapiente id assumenda pariatur eaque, velit aliquid reprehenderit et mollitia itaque saepe hic facere! Esse, libero illo cum debitis error vitae?</p>
-            </section>
-          </article>
-
-        }
-
         <div className={styles.card_content}>
           <GiPartyPopper className={styles.church} />
-          <h2 className={`${styles.title} ${myGreatVibesFont.className}`}>
-            Fiesta
-          </h2>
+          <h3 className={`${styles.title} ${myGreatVibesFont.className}`}>
+            Recepción
+          </h3>
 
           <p className={styles.day_title}>Día</p>
           <span className={styles.span}>
             01 Junio 2024
           </span>
 
+          <p className={styles.day_title}>Hora</p>
+          <span className={styles.span}>
+            7:00pm
+          </span>
+
           <button className={styles.place_btn}>Lugar</button>
           <span className={styles.span}>
-            <a className={styles.location_btn} href="https://www.google.com/maps/place/Casa/@4.604035,-74.1508868,16.08z/data=!4m6!3m5!1s0x8e3f9f00563dded3:0x48feb1f21559727b!8m2!3d4.6062812!4d-74.1530376!16s%2Fg%2F11vq09tbwv?entry=ttu">
+            <a className={styles.location_btn} href="https://www.google.com/maps/place/Casa+de+Banquetes+Absolut/@4.599719,-74.1082633,17z/data=!3m1!4b1!4m6!3m5!1s0x8e3f993c85f04853:0x2652b16e2c3b11ec!8m2!3d4.599719!4d-74.105683!16s%2Fg%2F11bycg8nmt?entry=ttu">
               <ImLocation className={styles.btn} />
-              Norte muy norte 200
+              Casa de Banquetes Absolut
             </a>
           </span>
 
-          <a href='https://wa.me/573045979465?text=Hola%20familia%20Giraldo%20Lesmes,%20con%20gusto%20[Escribir%20los%20nombres%20de%20los%20integrantes%20que%20asistirán]%20Estaremos%20allí%20celebrando%20con%20ustedes%20este%20día%20especial%20!!!'>
+          <a href='https://wa.me/573125022143?text=Hola%20familia%20Giraldo%20Lesmes,%20con%20gusto%20[Escribir%20los%20nombres%20de%20los%20integrantes%20que%20asistirán]%20Estaremos%20allí%20celebrando%20con%20ustedes%20este%20día%20especial%20!!!'>
             <button className={styles.map}>Confirmar Asistencia</button>
           </a>
         </div>

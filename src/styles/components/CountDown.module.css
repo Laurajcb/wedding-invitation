@@ -59,12 +59,57 @@
 }
 
 
+.loader {
+  margin-top: 6rem;
+  margin-left: 4rem;
+  width: 15rem;
+  aspect-ratio: 1;
+  border: 15px solid #ddd;
+  border-radius: 50%;
+  position: relative;
+  transform: rotate(45deg);
+}
+
+.loader::before {
+  content: "";
+  position: absolute;
+  inset: 4px;
+  border-radius: 50%;
+  border: 15px solid #002E5A;
+  animation: l18 2s infinite linear;
+}
+
+@keyframes l18 {
+  0% {
+    clip-path: polygon(50% 50%, 0 0, 0 0, 0 0, 0 0, 0 0)
+  }
+
+  25% {
+    clip-path: polygon(50% 50%, 0 0, 100% 0, 100% 0, 100% 0, 100% 0)
+  }
+
+  50% {
+    clip-path: polygon(50% 50%, 0 0, 100% 0, 100% 100%, 100% 100%, 100% 100%)
+  }
+
+  75% {
+    clip-path: polygon(50% 50%, 0 0, 100% 0, 100% 100%, 0 100%, 0 100%)
+  }
+
+  100% {
+    clip-path: polygon(50% 50%, 0 0, 100% 0, 100% 100%, 0 100%, 0 0)
+  }
+}
+
+
 @media only screen and (min-width: 768px) {
   .waves {
     display: block;
     position: absolute;
     height: 18rem;
     top: 8rem;
+    overflow: hidden;
+    max-width: 100%;
   }
 
   .container_count {
@@ -80,6 +125,7 @@
     font-size: 2.2rem;
     font-weight: 300;
   }
+
   .time_item {
     padding-right: 1.8rem;
   }
@@ -96,6 +142,7 @@
     position: absolute;
     height: 18rem;
     top: -5rem;
+    width: 130rem;
   }
 
   .container_count {
@@ -108,8 +155,7 @@
   }
 
   .time_container {
-    margin-top: 6rem;
-    margin-left: 3.5rem;
+    margin: 6rem 1.5rem 0;
   }
 
   .time_number {
@@ -119,7 +165,25 @@
 
   .time_item {
     border-right: solid #AEDCEB 0.1rem;
-    padding-right: 2rem;
+    padding: 0 0.5rem;
+    width: 5rem;
+  }
+
+  .time_item:nth-child(1){
+    padding-right: 5rem;
+  }
+
+  .loader {
+    margin-top: 10rem;
+    margin-left: 50%;
+    width: 25rem;
+  }
+
+  .loader::before {
+    inset: -15px;
+    border-radius: 50%;
+    border: 15px solid #002E5A;
+    animation: l18 3s infinite linear;
   }
 
 }

@@ -1,0 +1,83 @@
+.container {
+  height: 28rem;
+  background-color: #002E5A;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+  align-items: center;
+  width: 100%;
+}
+
+.names {
+  font-size: 2.8rem;
+  color: whitesmoke;
+  font-weight: 900;
+  position: relative;
+  top: -4rem;
+  left: 7rem;
+  margin-bottom: 2rem;
+}
+
+
+.span {
+  background-color: #AEDCEB;
+  position: relative;
+  display: inline-block;
+  border-radius: 50%;
+  width: 3rem;
+  height: 3rem;
+  font-size: 2rem;
+  color: #fff;
+  padding-left: 0.8rem;
+  position: relative;
+  top: -5rem;
+  left: 8rem;
+}
+
+.central_flowers_desktop {
+  width: 20rem;
+  height: 9rem;
+  position: relative;
+  left: 1rem;
+  top: -6rem;
+}
+
+.info {
+  display: flex;
+  flex-direction: column;
+}
+
+.questions {
+  color: #AEDCEB;
+}
+
+@media only screen and (min-width: 1000px) {
+  .container {
+    padding: 1rem;
+    flex-direction: row;
+    justify-content: space-around;
+    height: fit-content;
+  }
+
+  .names {
+    font-size: 2.8rem;
+    font-weight: 900;
+    position: relative;
+    top: -5rem;
+    left: 2rem;
+  }
+
+  .span {
+    top: -6rem;
+    left: 4rem;
+  }
+
+  .central_flowers_desktop {
+    display: none;
+  }
+
+  .info {
+    margin-top: 8rem;
+  }
+}

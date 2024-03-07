@@ -1,7 +1,8 @@
 import Image from "next/image";
-import styles from "@/styles/CountDown.module.css"
+import styles from "@/styles/components/CountDown.module.css"
 import { Time } from "@/types"
 import WavesSvg from "../../../public/assets/svg/img_ondas02.svg"
+
 
 type CountDownProps = {
   time: Time
@@ -11,13 +12,13 @@ export default function CountDown(props: CountDownProps) {
   const time = props.time
 
   if (!time) {
-    return <p>La informacion esta cargando</p>;
+    return <div className={styles.loader}></div>
   }
 
   return (
     <section className={styles.container}>
-      <Image src={WavesSvg} alt="svgIcon" className={styles.waves}/>
-      
+      <Image src={WavesSvg} alt="svgIcon" className={styles.waves} />
+
       <article className={styles.container_count}>
         <Image
           alt="countdown frame"

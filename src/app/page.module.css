@@ -1,3 +1,5 @@
-.container {
-  color: #e1f2f9;
+.main {
+  background-color: #e1f2f9;
+  max-width: 100%;
+  overflow-x: hidden;
 }
