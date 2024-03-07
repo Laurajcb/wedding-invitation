@@ -64,7 +64,7 @@ export default function Information() {
 
           <p className={styles.day_title}>Día</p>
           <span className={styles.span}>
-            01 Junio 2024
+            15 Junio 2024
           </span>
 
           <p className={styles.day_title}>Hora</p>
