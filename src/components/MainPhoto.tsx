@@ -31,14 +31,6 @@ export default function MainPhoto() {
         />
 
         <div className={styles.img_container}>
-
-          <Image
-            alt="button_frame"
-            src={"/assets/img/frame2.png"}
-            width={400}
-            height={30}
-            className={styles.button_frame}
-          />
           <Image
             alt="flowers_center"
             src={"/assets/img/flowers_horizontal.png"}
