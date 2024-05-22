@@ -28,7 +28,7 @@ export default function Footer() {
       </section>
 
       <article className={styles.questions}>
-        <p>Inquitides o dudas?</p>
+        <p className={styles.p}>Inquitides o dudas?</p>
         <span>Llama: 3142444999</span>
       </article>
     </section>

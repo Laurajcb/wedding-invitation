@@ -9,11 +9,11 @@
   margin-left: 0rem;
 }
 
-.arrow{
+.arrow {
   display: flex;
   align-self: flex-start;
-  font-size: 3rem;
-  margin-left: 2rem;
+  font-size: 2rem;
+  margin-left: 1rem;
   color: #002E5A;
 }
 
@@ -144,16 +144,16 @@
     flex-direction: row;
   }
 
-  .p{
+  .p {
     font-size: 2.9rem;
     margin: 3rem;
   }
 
-  .margin{
+  .margin {
     margin-bottom: 6rem;
   }
 
-  .flowers2{
+  .flowers2 {
     height: 9rem;
     width: 9rem;
     left: 76rem;
