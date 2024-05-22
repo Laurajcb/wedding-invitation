@@ -59,7 +59,7 @@
   text-decoration: none;
 }
 
-.span{
+.span[href^="tel:"]{
   text-decoration: none;
   color: white;
 }
