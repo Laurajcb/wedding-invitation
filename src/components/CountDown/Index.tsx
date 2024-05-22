@@ -8,7 +8,7 @@ export default function CountDownLogic() {
   const [timeLeft, setTimeLeft] = useState<Time>();
 
   useEffect(() => {
-    const targetDate = new Date('2024-06-15T23:59:59');
+    const targetDate = new Date('2024-06-15T16:30:00');
 
     const calculateTimeLeft = () => {
       const difference = +targetDate - +new Date();

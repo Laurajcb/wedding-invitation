@@ -81,7 +81,7 @@ export default function Information() {
           </span>
 
           <a href='https://wa.me/573142444999?text=Hola%20familia%20Giraldo%20Lesmes,%20con%20gusto%20[Escribir%20los%20nombres%20de%20los%20integrantes%20que%20asistirán]%20Estaremos%20allí%20celebrando%20con%20ustedes%20este%20día%20especial%20!!!'>
-            <button className={styles.map}>Confirmar Asistencia</button>
+            <button className={styles.map}>Confirma Asistencia aquí !!</button>
           </a>
         </div>
 

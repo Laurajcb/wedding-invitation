@@ -10,8 +10,8 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  height: 23rem;
-  width: 20rem;
+  height: 25rem;
+  width: 22rem;
   background-color: white;
   padding: 0.5rem;
   position: relative;
@@ -22,7 +22,7 @@
 }
 
 .icon {
-  font-size: 5rem;
+  font-size: 8rem;
   color: #002E5A;
 }
 

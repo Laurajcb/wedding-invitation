@@ -95,12 +95,13 @@
 }
 
 .map {
-  background-color: #AEDCEB;
+  background-color: #002E5A;
   color: white;
   border: none;
   font-size: 1.2rem;
   padding: 0.5rem;
   border-radius: 2rem;
+  border: 0.05rem solid  #002e5abd;
 }
 
 .modalOverlay {

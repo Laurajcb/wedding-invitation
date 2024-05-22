@@ -35,9 +35,9 @@ export default function Recomendations() {
           <br />
           <span className={styles.span_dress_code}>
             <span className={styles.bold}>
-              Restringido el uso</span>de color
+              Restringido el uso de color</span>
             <span className={styles.bold}>
-              azul-oscuro/navy
+              azul-noche
             </span>
           </span>
         </p>
