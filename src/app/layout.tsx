@@ -12,7 +12,7 @@ const myPoppinsFont: Poppins = Poppins({
 
 
 export const metadata: Metadata = {
-  title: "Create Next App",
+  title: "D & G Wedding invitation",
   description: "D & G Wedding invitation",
 };
 
