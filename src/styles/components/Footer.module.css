@@ -59,7 +59,7 @@
   text-decoration: none;
 }
 
-.spanFooter[href^="tel:"]{
+span .spanFooter {
   text-decoration: none;
   color: white;
 }
