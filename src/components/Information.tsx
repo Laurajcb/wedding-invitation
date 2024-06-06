@@ -44,7 +44,7 @@ export default function Information() {
 
           <p className={styles.day_title}>Hora</p>
           <span className={styles.span}>
-            4:30pm
+            4:00pm
           </span>
 
           <button className={styles.place_btn}>Lugar</button>
